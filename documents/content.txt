@@ -1,0 +1,49 @@
+
+M >> index                                   // صفحه نخست
+M >> federation >> history                   // تاریخچه
+M >> federation >> board-of-directors        // هیئت رئیسه
+M >> federation >> panels                    // هیئت های استانی
+M >> federation >> committees                // کمیته ها
+M >> federation >> styles                    // سبک ها 
+M >> medalists                               // مدال آوران
+M >> referees                                // داوران
+M >> news                                    // اخبار
+M >> executable-calendar >> tutorialSection  // تقویم اجرایی - کمیته آموزش
+M >> executable-calendar >> federation       // تقویم اجرایی - فدراسیون
+M >> announcements >> league and matches     // اطلاعیه ها - لیگ و مسابقات
+M >> announcements >> tutorial section       // اطلاعیه ها - آموزش
+M >> announcements >> general                // اطلاعیه ها - عمومی
+
+------------------------------------------------------------------------------
+
+T & C >> smart card                          // کارت هوشمند
+M >> multimedia >> image gallery             // رسانه - گالری تصاویر
+M >> multimedia >> archive videos            // رسانه - آرشیو ویدئوها
+T & C >> feedbacks                           // نظرات و پیشنهادات
+
+-------------------------------------------------------------------------------
+
+T >> User login panel                            // پنل ورود کاربران
+T & C >> Tours >> don                            // پنل دوره ها - دان
+T & C >> Tours >> refreeing                      // پنل دوره ها - داوری
+T & C >> Tours >> coaching                       // پنل دوره ها - مربیگری
+T & C >> Tours >> workshop                       // پنل دوره ها - کارگاه
+T & C >> Tours >> coaching operation             // پنل دوره ها - مربیگری عملی
+T & C >> Tours >> re-learning                    // پنل دوره ها - بازآموزی
+
+---------------------------------------------------------------------------------
+
+C >> daily word                              // سخن روز
+C >> this year calendar                      // تقویم سال 1399
+S >> especial news                           // خبرهای ویژه
+S >> archive news                            // آرشیو اخبار
+S >> latest news                             // آخرین خبرها
+S >> newsletter                              // خبرنامه
+
+---------------------------------------------------------------------------------
+
+Footer:
+contact info                            // اطلاعات تماس
+vote for website                        // نظرسنجی درباره وبسایت جدید
+related links                           // لینک های مرتبط
+about wushu                             // درباره ووشو

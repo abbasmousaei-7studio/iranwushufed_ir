@@ -1,0 +1,18 @@
+SERVER ACCESS:
+http://45.159.115.207
+PORT: 33096
+URL: http://45.159.115.207:33096
+USERNAME: administrator
+PASSWORD: Qx4uL6ou0X1S2x2PSk
+
+
+SQL ACCESS:
+45.159.115.207
+PORT: 2019
+USEENAME: sa
+PASSWORD: Bnfcus34zUbdSVux
+
+
+DATABASE: iranwudb
+USERNAME: iranwuuser
+PASSWORD: s5yvwblpfzhomqgcrtia
