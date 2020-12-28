@@ -1,179 +1,605 @@
-@charset "utf-8";
-@import url("fontiran.css");
-
-/* @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css'); */
-
-body,
-html {
-    margin: 0;
-    background-color: #f7f8f8;
-    background-image: linear-gradient(135deg, #f7f8f8 0%, #f5f7f8 100%);
-}
-
-a {
-    text-decoration: none !important;
-}
-
-.rtl {
-    direction: rtl;
-}
-
-.ltr {
-    direction: ltr;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.clearfix {
-    clear: both;
-}
-
-
-.top-contact {
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    /* background-color: #1D3557; */
-    background-color: #FFF;
-    color: #666;
-    font-size: 14px;
-    font-weight: 500;
-    padding-top: 7px;
-    /* border-bottom: 1px solid #f9f9f9; */
-}
-
-.top-contact .menu {
-    font-family: 'IRANSansLight';
-    color: #777;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.top-contact .menu a {
-    margin-left: 14px;
-    color: #777;
-    text-decoration: none;
-}
-
-.top-contact .menu a.active {
-    color: #db291c;
-}
-
-.con-top-contact {
-    border-bottom: 1px solid #f9f9f9;
-    padding-bottom: 8px;
-}
-
-.middle-header {
-    width: 100%;
-    height: 85px;
-    overflow: hidden;
-    background-color: #ffffff;
-    direction: rtl;
-    padding-top: 10px;
-}
-.middle-header .logo-block {
-    float: left;
-    text-align: left;
-}
-.middle-header .logo-text-block {
-    float: right;
-    text-align: right;
-    padding-top: 20px;
+    @charset "utf-8";
+    @import url("fontiran.css");
+    /* @import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css'); */
     
-}
-
-.middle-header .logo-text-block h5 {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 1px 0 #bbb,
-               0 1px 0 #b9b9b9,
-               0 2px 0 #aaa,
-               0 2px 1px rgba(0,0,0,.1),
-               0 0 1px rgba(0,0,0,.1),
-               0 1px 1px rgba(0,0,0,.3),
-               0 3px 2px rgba(0,0,0,.2),
-               0 2px 4px rgba(0,0,0,.25),
-               0 4px 4px rgba(0,0,0,.2),
-               0 8px 8px rgba(0,0,0,.15);
-
-}
-
-
-.pad-zero {
-    padding: 0 !important;
-}
-.pad-nine {
-    padding: 9px !important;
-}
-
-
-nav {
-    background-color: #cc0000 !important;
-    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75) !important;
-    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75) !important;
-    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75) !important;
-}
-
-.navbar {
-    transition: padding 0.5s;
-}
-
-
-.navbar-nav.mx-auto {
-    animation:  2s ease-out both;
-  }
-  .navbar-nav.text-md-right {
-    animation:  2s ease-out both;
-  }
-  
-.navbar-nav li {
-    margin-left: 7px !important;
+    body,
+    html {
+        margin: 0;
+        background-color: #f7f8f8;
+        /* background-image: linear-gradient(135deg, #f7f8f8 0%, #f5f7f8 100%); */
+        background-image: url("./noisy02.png") !important;
+        background-repeat: repeat;
+    }
     
-}
-
-.dropdown-menu a.dropdown-item:hover {
-    background-color: #cc0000 !important;
-    color: #f9f9f9 !important;
-}
-.nav-link-text {
-    color: #f5f5f5 !important;
-}
-
-.nav-link-text:hover {
-    color: #111111 !important;
-    background: #ffffff !important;
-    border-radius: 10px !important;
-}
-
-
-img.hide-logo-image {
-    border:2px solid #fff;
-  background: url(img/duck.png) no-repeat;
-  -moz-box-shadow: 0px 6px 5px #ccc;
-  -webkit-box-shadow: 0px 6px 5px #ccc;
-  box-shadow: 0px 6px 5px #ccc;
-  -moz-border-radius:190px;
-  -webkit-border-radius:190px;
-  border-radius:190px;
-}
-
-@media (max-width: 1025px) {
+    a {
+        text-decoration: none !important;
+    }
+    
+    .rtl {
+        direction: rtl;
+    }
+    
+    .ltr {
+        direction: ltr;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    .lh-1-5 {
+        line-height: 1.5em;
+    }
+    
+    .lh-2 {
+        line-height: 2em;
+    }
+    
+    .lh-2-5 {
+        line-height: 2.5em;
+    }
+    
+    .lh-3 {
+        line-height: 3em;
+    }
+    
     .top-contact {
-        height: 0 !important;
-        display: none;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        /* background-color: #1D3557; */
+        background-color: #FFF;
+        color: #666;
+        font-size: 14px;
+        font-weight: 500;
+        padding-top: 7px;
+        /* border-bottom: 1px solid #f9f9f9; */
     }
+    
+    .top-contact .menu {
+        font-family: 'IRANSansLight';
+        color: #777;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .top-contact .menu a {
+        margin-left: 14px;
+        color: #777;
+        text-decoration: none;
+    }
+    
+    .top-contact .menu a.active {
+        color: #db291c;
+    }
+    
+    .con-top-contact {
+        border-bottom: 1px solid #f9f9f9;
+        padding-bottom: 8px;
+    }
+    
     .middle-header {
-        height: 0 !important;
-        display: none;
+        width: 100%;
+        height: 85px;
+        overflow: hidden;
+        background-color: #ffffff;
+        direction: rtl;
+        padding-top: 10px;
     }
-    .nav-link-logo {
-        display: none !important;
+    
+    .middle-header .logo-block {
+        float: left;
+        text-align: left;
     }
-    .navbar {
+    
+    .middle-header .logo-text-block {
+        float: right;
+        text-align: right;
+        padding-top: 20px;
+    }
+    
+    .middle-header .logo-text-block h5 {
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 1px 0 #bbb, 0 1px 0 #b9b9b9, 0 2px 0 #aaa, 0 2px 1px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .1), 0 1px 1px rgba(0, 0, 0, .3), 0 3px 2px rgba(0, 0, 0, .2), 0 2px 4px rgba(0, 0, 0, .25), 0 4px 4px rgba(0, 0, 0, .2), 0 8px 8px rgba(0, 0, 0, .15);
+    }
+    
+    .pad-zero {
+        padding: 0 !important;
+    }
+    
+    .pad-nine {
         padding: 9px !important;
     }
-}
+    
+    nav {
+        background-color: #cc0000 !important;
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75) !important;
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75) !important;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75) !important;
+        border-radius: 0 !important;
+    }
+    
+    .navbar {
+        transition: padding 0.5s;
+    }
+    
+    .navbar-nav.mx-auto {
+        animation: 2s ease-out both;
+    }
+    
+    .navbar-nav.text-md-right {
+        animation: 2s ease-out both;
+    }
+    
+    .navbar-nav li {
+        margin-left: 7px !important;
+    }
+    
+    .dropdown-menu a.dropdown-item:hover {
+        background-color: #cc0000 !important;
+        color: #f9f9f9 !important;
+    }
+    
+    .nav-link-text {
+        color: #f5f5f5 !important;
+    }
+    
+    .nav-link-text:hover {
+        color: #111111 !important;
+        background: #ffffff !important;
+        border-radius: 10px !important;
+    }
+    
+    img.hide-logo-image {
+        border: 2px solid #fff;
+        -moz-box-shadow: 0px 6px 5px #ccc;
+        -webkit-box-shadow: 0px 6px 5px #ccc;
+        box-shadow: 0px 6px 5px #ccc;
+        -moz-border-radius: 190px;
+        -webkit-border-radius: 190px;
+        border-radius: 190px;
+    }
+    
+    @media (max-width: 1025px) {
+        .top-contact {
+            height: 0 !important;
+            display: none;
+        }
+        .middle-header {
+            height: 0 !important;
+            display: none;
+        }
+        .nav-link-logo {
+            display: none !important;
+        }
+        .navbar {
+            padding: 9px !important;
+        }
+    }
+    
+    .breadcamp {
+        color: #444;
+        font-family: 'IRANSansMedium';
+        font-size: 13px;
+        background: #f3f5f6;
+        padding: 3px;
+        border-bottom: 1px dashed #e5e5e5;
+        padding-top: 10px;
+    }
+    
+    .main-section {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        /* background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#cc0000", GradientType=1); */
+        background-image: url("./noisy.png") !important;
+        background-repeat: repeat;
+        border-bottom: 1px solid #e1e1e1;
+        -moz-box-shadow: 0px 6px 5px #ccc;
+        -webkit-box-shadow: 0px 6px 5px #ccc;
+        box-shadow: 0px 6px 5px #ccc;
+        border-radius: 0 !important;
+    }
+    
+    .cpanel {
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        -webkit-box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        -moz-box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        /* box-shadow: 0px 14px 20px rgba(34, 35, 58, 0.5); */
+    }
+    
+    .cpanel .cpanel-header {
+        width: calc(100% + 3px);
+        height: 35px;
+        margin-top: 6px;
+        position: relative;
+        right: -6px;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        left: 0 !important;
+        background-color: #db291c;
+        color: #fff;
+        padding: 7px;
+        overflow: hidden;
+        font-family: 'IRANSansBold';
+        font-size: 14px;
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -webkit-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -moz-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        /* border-top: 2px solid #cccc33; */
+    }
+    
+    .cpanel .cpanel-body {
+        margin: 15px 9px 20px 16px;
+        padding-right: 6px;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section h6.title {
+        width: 100%;
+        height: 22px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #fce6e6;
+        margin-bottom: 17px;
+        font-family: 'IRANSansBold';
+        font-size: 14px;
+        color: #ff0000;
+    }
+    
+    .cpanel .cpanel-body p {
+        width: 100%;
+        direction: rtl;
+        text-align: justify;
+        line-height: 2.5em;
+        color: #444;
+        font-family: 'IRANSansNormal';
+        font-size: 15px;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section p {
+        width: 100%;
+        direction: rtl;
+        text-align: right;
+        line-height: 1.5em;
+        color: #444;
+        font-family: 'IRANSansNormal';
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section .calendar-item {
+        margin-bottom: 12px;
+        padding: 5px;
+        border-bottom: 1px dotted #f1f1f1;
+        padding-bottom: 0;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section a.calendar-link:hover .calendar-item {
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section .calendar-item h6.calendar-date {
+        width: 100%;
+        height: 15px;
+        font-family: 'IRANSansLight';
+        font-size: 12px;
+        color: #666;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    
+    .cpanel .cpanel-body .cpanel-section .calendar-item p.calendar-comment {
+        width: 100%;
+        font-family: 'IRANSansNormal';
+        font-size: 14px;
+        color: #222;
+        line-height: 1.5em;
+        margin-top: -2px;
+    }
+    
+    .carousel-inner {
+        width: 100% !important;
+        border: 4px solid #ffffff !important;
+        border-radius: 12px;
+        box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        -webkit-box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        -moz-box-shadow: 0 8px 10px -1px rgb(198, 207, 234) !important;
+        height: 460px !important;
+    }
+    
+    .carousel-inner .carousel-item img {
+        width: 100% !important;
+        height: 460px !important;
+    }
+    
+    .carousel-inner .carousel-item .carousel-caption {
+        bottom: 20px;
+        right: 0 !important;
+        left: 20px;
+        padding: 8px 12px;
+        background-color: rgba(255, 0, 0, 0.6);
+        overflow: hidden !important;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border: 1px solid #888;
+        border-right: none;
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -webkit-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -moz-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .carousel-inner .carousel-item .carousel-caption h5 {
+        font-family: 'IRANSansMedium';
+        text-align: right;
+        direction: rtl;
+        width: 100%;
+        overflow: hidden !important;
+        margin-top: 5px;
+        color: #fff;
+    }
+    
+    .Tours-item {
+        width: 100%;
+        background: #fff;
+        /* background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(204, 0, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#cc0000", GradientType=1); */
+        border: 1px solid #e1e1e1;
+        border-radius: 12px;
+        padding: 12px 6px;
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -webkit-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -moz-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .Tours-item i {
+        color: #555555;
+    }
+    
+    .Tours-item h6 {
+        margin-top: 8px;
+        font-family: 'IRANSansBold';
+        font-size: 15px;
+        color: #222;
+    }
+    
+    .Tours-item .btn {
+        margin-top: 12px;
+        font-family: 'IRANSansLight';
+    }
+    
+    @media (max-width: 780px) {
+        .Tours-item {
+            margin-bottom: 20px !important;
+        }
+        .cpanel {
+            margin-top: 20px !important;
+        }
+    }
+    
+    .cpanel.smart-card {
+        height: 460px !important;
+    }
+    
+    @media (max-width: 990px) {
+        .carousel-inner {
+            height: 340px !important;
+        }
+        .carousel-inner .carousel-item img {
+            height: 340px !important;
+        }
+        .cpanel.smart-card {
+            height: 340px !important
+        }
+    }
+    
+    .news {
+        width: 100%;
+    }
+    
+    .news .news-item {
+        width: 100%;
+        padding: 8px 6px 15px 6px;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed #e1e1e1;
+    }
+    
+    .news .news-item:last-child {
+        border-bottom: none !important;
+    }
+    
+    .news .news-item img {
+        width: 115px;
+        height: 115px;
+        border: 1px solid #333;
+        border-radius: 7px;
+        float: right;
+        margin-left: 10px;
+        box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -webkit-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+        -moz-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .news .news-item .commentbody h5 {
+        font-family: 'IRANSansBold';
+        font-size: 16px;
+        color: #111;
+    }
+    
+    .news .news-item .commentbody h5 a {
+        color: #111 !important;
+        text-decoration: none;
+    }
+    
+    .news .news-item .commentbody h5 a:hover {
+        color: #cc0000 !important;
+        text-decoration: none;
+    }
+    
+    .news .news-item .commentbody span {
+        width: 100%;
+        font-family: 'IRANSansLight';
+        font-size: 13px;
+        color: #777;
+        margin-top: -4px !important;
+    }
+    
+    .news .news-item .commentbody p {
+        font-family: 'IRANSansNormal';
+        font-size: 15px;
+        color: #555;
+        line-height: 2em;
+        margin-top: 7px;
+    }
+    
+    @media (max-width: 991px) {
+        .news .news-item img {
+            width: 90px !important;
+            height: 90px !important;
+        }
+        .news .news-item .commentbody h5 {
+            font-family: 'IRANSansBold' !important;
+            font-size: 14px !important;
+        }
+        .news .news-item .commentbody span {
+            font-size: 12px !important;
+        }
+        .news .news-item .commentbody p {
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+        }
+    }
+    
+    .footer {
+        background: #322f2f;
+        border-top: 2px solid #cc0000;
+        padding-bottom: 30px;
+        background-image: url("./footer-noisy.png") !important;
+        background-repeat: repeat;
+    }
+    
+    .footer .container .row {
+        padding-top: 40px;
+        color: #fff;
+    }
+    
+    .footer .container .row h5.heading {
+        width: 100%;
+        height: 35px;
+        font-family: 'IRANSansBold';
+        font-size: 18px;
+        color: #ff0000;
+        border-bottom: 1px solid #523b3b;
+        padding-bottom: 4px;
+        margin-bottom: 25px;
+    }
+    
+    .footer .container .row p {
+        width: 100%;
+        font-family: 'IRANSansNormal';
+        font-size: 14px;
+        color: #e1e1e1;
+        line-height: 2.5em;
+        text-align: justify;
+        padding: 2px 8px;
+    }
+    
+    .footer .container .row ul {
+        list-style: none;
+        list-style-type: none;
+        margin-right: -30px;
+    }
+    
+    .footer .container .row ul>li {
+        margin-bottom: 15px;
+        font-family: 'IRANSansNormal';
+        font-size: 14px;
+        color: #e1e1e1;
+    }
+    
+    .footer .container .row ul>li a {
+        color: #e1e1e1;
+    }
+    
+    .footer .container .row ul>li a:hover {
+        color: #ff0000;
+    }
+    
+    .footer .container .row ul>li i {
+        color: #cc0000;
+        font-size: 17px;
+    }
+    
+    .copyright {
+        background: #151313;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        color: #c9c9c9;
+        font-family: 'IRANSansNormal';
+        font-size: 14px;
+        line-height: 2.5em;
+    }
+    /* Scroll to top button */
+    
+    #button {
+        display: inline-block;
+        background-color: #cc0000;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        color: #fff;
+        padding-top: 5px;
+        font-size: 24px;
+    }
+    
+    #button::after {
+        /* content: "\f077";
+        font-family: FontAwesome; */
+        /* font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff; */
+    }
+    
+    #button:hover {
+        cursor: pointer;
+        /* background-color: #ff0000; */
+        opacity: 1 !important;
+    }
+    
+    #button:active {
+        background-color: #555;
+    }
+    
+    #button.show {
+        opacity: 0.4;
+        visibility: visible;
+    }
